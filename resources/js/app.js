@@ -48,6 +48,16 @@ jQuery(function() {
     });
 
     equalHeights();
+
+    var maxNewsTitleHeight = 0;
+    jQuery('.newstitle1').each(function(e,v) {
+        var tmp = jQuery(v).height(); 
+        if(tmp>maxNewsTitleHeight) {
+            maxNewsTitleHeight = tmp;
+        }
+    });
+    // console.log(maxNewsTitleHeight);
+    jQuery('.newstitle1').css({height:maxNewsTitleHeight});
     
     setInterval(function() {
 
@@ -62,7 +72,7 @@ jQuery(function() {
             var targetItem = jQuery(v).find('.newsitem:first');
             var targetItemHeight = jQuery(v).find('.newsitem:first').height();
             targetItem.slideUp(333,function() {
-                jQuery(this).css({height:targetItemHeight,marginBottom:'',display:''}).appendTo(jQuery(v).find('.newswrap'));
+                jQuery(this).css({marginBottom:'',display:''}).appendTo(jQuery(v).find('.newswrap'));
             });
         });
     },5000);

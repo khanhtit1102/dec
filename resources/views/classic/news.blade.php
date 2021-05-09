@@ -18,13 +18,13 @@
                                     <div class="newsimage">
                                         <a href="{{ route('newsdetail',$item->alias) }}"><img src="{{ asset(empty($item->media->first()->link)?'images/noimage.jpg':$item->media->first()->link) }}" class="img-fluid" title="{{ $item->post_details->first()->name }}" alt="{{ $item->post_details->first()->name }}"></a>
                                     </div>
-                                    <div class="newstitle">
-                                        <h5>
+                                    <div class="newstitle1 bg-warning d-block p-1">
+                                        <h6>
                                             <a href="{{ route('newsdetail',$item->alias) }}">
                                                 <span class="d-none d-lg-block">{{ Str::words($item->post_details->first()->name,10) }}</span>
                                                 <span class="d-block d-lg-none">{{ $item->post_details->first()->name }}</span>
                                             </a>
-                                        </h5>
+                                        </h6>
                                     </div>
                                 </div>
                             </div>
