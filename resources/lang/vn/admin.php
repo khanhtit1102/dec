@@ -150,4 +150,10 @@ return [
     'regulation_list'       => 'Danh sách QC/QĐ',
     'regulation_edit'       => 'Chỉnh sửa QC/QĐ',
 
+    'usefulnews_management' => 'Quản lý TTST',
+    'usefulnews_create'     => 'Tạo TTST mới',
+    'usefulnews_list'       => 'Danh sách TTST',
+    'usefulnews_edit'       => 'Chỉnh sửa TTST',
+    'usefulnews_check'      => 'Duyệt TTST',
+
 ];

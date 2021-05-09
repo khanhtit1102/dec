@@ -27,14 +27,15 @@ Route::get('ba-cong-khai/{post}','PostController@show')->name('bck');
 Route::get('tin-tuc','PostController@index')->name('news');
 Route::get('tin-tuc/{post}','PostController@show')->name('newsdetail');
 Route::get('thong-bao/{post}','PostController@show')->name('anouncement');
-Route::post('tim-kiem', 'SearchController@search')->name('search');
 Route::get('tim-kiem/{keyword}', 'SearchController@result')->name('result');
 Route::get('doi-ngu-can-bo','StaffController@index')->name('staff');
 Route::get('tra-cuu-diem/{post}','PostController@show')->name('tracuudiem');
 Route::get('khao-thi-va-dam-bao-chat-luong','HomeController@index')->name('ktvdbcl');
+Route::get('/checknews','UsefulNewsController@checkNewspaper')->name('checknews');
 
 Route::post('tvts', 'ContactController@tvts')->name('tvts');
 Route::post('lien-he','ContactController@contact')->name('contact');
+Route::post('tim-kiem', 'SearchController@search')->name('search');
 
 Route::resource('posts','PostController');
 
@@ -83,9 +84,20 @@ Route::namespace('Admin')->prefix('admin')->name('admin.')->middleware('auth')->
         Route::any('/{partner}/publish','PartnerController@publish')->name('publish');
     });
 
+    Route::prefix('subjectkeys')->name('subjectkeys.')->group(function() {
+        Route::get('datatable','SubjectKeyController@getDatatable')->name('datatable');
+        Route::any('/{subjectkey}/publish','SubjectKeyController@publish')->name('publish');
+    });
+
     Route::prefix('regulations')->name('regulations.')->group(function() {
         Route::get('datatable','RegulationController@getDatatable')->name('datatable');
-        Route::any('/{regulation}/publish','RegulationController@publish')->name('publish');
+        Route::any('/{post}/publish','RegulationController@publish')->name('publish');
+    });
+
+    Route::prefix('usefulnews')->name('usefulnews.')->group(function() {
+        Route::get('datatable','UsefulNewsController@getDatatable')->name('datatable');
+        Route::any('/{post}/publish','UsefulNewsController@publish')->name('publish');
+        Route::get('check','UsefulNewsController@checkNewspaper')->name('check');
     });
 
     Route::prefix('students')->name('students.')->group(function() {
@@ -106,8 +118,12 @@ Route::namespace('Admin')->prefix('admin')->name('admin.')->middleware('auth')->
     Route::resource('menucategories','MenuCategoryController');        
     Route::resource('partners','PartnerController');        
     Route::resource('students','StudentController');        
+    Route::resource('subjectkeys','SubjectKeyController');        
     Route::resource('regulations','RegulationController')->parameters([
         'regulations' => 'post',
+    ]);
+    Route::resource('usefulnews','UsefulNewsController')->parameters([
+        'usefulnews' => 'post',
     ]);        
 });
 

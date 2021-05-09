@@ -128,6 +128,27 @@
       </div>
     </li>
 
+    {{-- UsefulNews management --}}
+    @if(auth()->user()->hasPermissions('quan-ly-thong-tin-suu-tam'))
+    <li class="nav-item">
+      <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUsefulNews" aria-expanded="true" aria-controls="collapseUsefulNews">
+        <i class="fas fa-fw fa-book"></i>
+        <span>{{ __('admin.usefulnews_management') }}</span>
+      </a>
+      <div id="collapseUsefulNews" class="collapse" aria-labelledby="headingUsefulNews" data-parent="#accordionSidebar">
+        <div class="bg-white py-2 collapse-inner rounded">
+          <h6 class="collapse-header">{{ __('admin.post_category') }}:</h6>
+          <a class="collapse-item" href="{{ route('admin.categories.index',['type'=>'usefulnews']) }}">{{ __('admin.category_list') }}</a>
+          <a class="collapse-item" href="{{ route('admin.categories.create',['type'=>'usefulnews']) }}">{{ __('admin.category_create') }}</a>
+          <h6 class="collapse-header">{{ __('admin.usefulnews_management') }}:</h6>
+          <a class="collapse-item" href="{{ route('admin.usefulnews.check') }}">{{ __('admin.usefulnews_check') }}</a>
+          <a class="collapse-item" href="{{ route('admin.usefulnews.index') }}">{{ __('admin.usefulnews_list') }}</a>
+          <a class="collapse-item" href="{{ route('admin.usefulnews.create') }}">{{ __('admin.usefulnews_create') }}</a>
+        </div>
+      </div>
+    </li>
+    @endif
+
     @if(config('app.menu_enabled'))
     <li class="nav-item">
       <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseMenu" aria-expanded="true" aria-controls="collapseMenu">

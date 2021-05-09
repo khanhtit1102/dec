@@ -18,6 +18,9 @@ trait HasPermissionsTrait {
         return false;
     }
     public function hasPermissions(... $permisions) {
+        if ($this->hasRole('super-user')) {
+            return true;
+        }
         $perms = $this->groups->load('permissions')->pluck('permissions')->flatten()->pluck('alias')->unique();
         foreach ($permisions as $value) {
             if($perms->contains($value)) return true;
