@@ -4,7 +4,7 @@
             <div class="col-md-6 my-2">
                 <div class="khaigiang khaigianghn text-center bg-primary text-white p-4 rounded">
                     <h3>Khai giảng tại Hà Nội</h3>
-                    <h5>Ngày 07/03/2021</h5>
+                    <h5>Ngày 30/05/2021</h5>
                     <div class="demnguoc demnguochn">
                         <button class="btn btn-lg btn-outline-warning ngay my-1">20 ngày</button>
                         <button class="btn btn-lg btn-outline-warning gio my-1">21 giờ</button>
@@ -19,7 +19,7 @@
             <div class="col-md-6 my-2">
                 <div class="khaigiang khaigianghcm text-center bg-primary text-white p-4 rounded">
                     <h3>Khai giảng tại Hồ Chí Minh</h3>
-                    <h5>Ngày 14/03/2021</h5>
+                    <h5>Ngày 06/06/2021</h5>
                     <div class="demnguoc demnguochcm">
                         <button class="btn btn-lg btn-outline-warning ngay my-1">23 ngày</button>
                         <button class="btn btn-lg btn-outline-warning gio my-1">10 giờ</button>
@@ -36,7 +36,7 @@
             <div class="col-6 col-md-4 my-2">
                 <div class="bg-primary text-white p-2 rounded text-center">
                     <h3>Khai giảng tại Hà Giang</h3>
-                    <h5>Ngày 26/03/2020</h5>
+                    <h5>Ngày 26/05/2020</h5>
                     <p><i>(Lịch dự kiến)</i></p>
                     <button class="btn btn-block btn-warning" data-toggle="modal" data-request="hg" data-target="#registerRequest">Đăng ký ngay</button>
                 </div>
@@ -44,7 +44,7 @@
             <div class="col-6 col-md-4 my-2">
                 <div class="bg-primary text-white p-2 rounded text-center">
                     <h3>Khai giảng tại Cần Thơ</h3>
-                    <h5>Ngày 21/03/2020</h5>
+                    <h5>Ngày 21/06/2020</h5>
                     <p><i>(Lịch dự kiến)</i></p>
                     <button class="btn btn-block btn-warning" data-toggle="modal" data-request="ct" data-target="#registerRequest">Đăng ký ngay</button>
                 </div>
@@ -117,8 +117,8 @@
             return [dd,hh,mm,ss];
         };
         var checkTime = function() {
-            var kghn  = new Date("3/7/2021 8:00:00");
-            var kghcm = new Date("3/14/2021 8:00:00");
+            var kghn  = new Date("5/30/2021 8:00:00");
+            var kghcm = new Date("06/06/2021 8:00:00");
             var cTime = Date.now();
             var tmpHN = timediff(kghn.getTime(),cTime);
             jQuery('.demnguochn .ngay').text(tmpHN[0] + ' ngày');

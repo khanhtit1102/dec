@@ -1,7 +1,7 @@
 <section id="nganhdaotao" class="my-4 py-3 bg-white">
     <div class="container">
         <h2 class="text-center text-primary">CÁC NGÀNH ĐÀO TẠO</h2>
-        <h3 class="text-center text-secondary">CHƯƠNG TRÌNH ĐÀO TẠO CỬ NHÂN TRỰC TUYẾN ĐẠI HỌC TỪ XA</h3>
+        <h3 class="text-center text-secondary">CHƯƠNG TRÌNH ĐÀO TẠO CỬ NHÂN ĐẠI HỌC TỪ XA</h3>
         <div class="row">
             <div class="col col-12 col-md-4 my-1">
                 <div type="button" data-toggle="modal" data-target="#nganhDaotao" data-majorname="Ngôn ngữ Anh" data-majordesc="Giới thiệu ngành Ngôn ngữ Anh" class="btn btn-block btn-outline-info">
