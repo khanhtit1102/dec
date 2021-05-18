@@ -1,7 +1,7 @@
 <section id="khaigiang">
     <div class="container">
         <div class="row">
-            <div class="col-md-6 my-2">
+            <div class="col-md-4 my-2">
                 <div class="khaigiang khaigianghn text-center bg-primary text-white p-4 rounded">
                     <h3>Khai giảng tại Hà Nội</h3>
                     <h5>Ngày 30/05/2021</h5>
@@ -16,7 +16,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 my-2">
+            <div class="col-md-4 my-2">
                 <div class="khaigiang khaigianghcm text-center bg-primary text-white p-4 rounded">
                     <h3>Khai giảng tại Hồ Chí Minh</h3>
                     <h5>Ngày 06/06/2021</h5>
@@ -29,24 +29,6 @@
                     <div class="dangkyngay mt-3">
                         <button class="btn btn-warning btn-lg" data-toggle="modal" data-target="#registerRequest">Đăng ký ngay</a>
                     </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-6 col-md-4 my-2">
-                <div class="bg-primary text-white p-2 rounded text-center">
-                    <h3>Khai giảng tại Hà Giang</h3>
-                    <h5>Ngày 26/05/2020</h5>
-                    <p><i>(Lịch dự kiến)</i></p>
-                    <button class="btn btn-block btn-warning" data-toggle="modal" data-request="hg" data-target="#registerRequest">Đăng ký ngay</button>
-                </div>
-            </div>
-            <div class="col-6 col-md-4 my-2">
-                <div class="bg-primary text-white p-2 rounded text-center">
-                    <h3>Khai giảng tại Cần Thơ</h3>
-                    <h5>Ngày 21/06/2020</h5>
-                    <p><i>(Lịch dự kiến)</i></p>
-                    <button class="btn btn-block btn-warning" data-toggle="modal" data-request="ct" data-target="#registerRequest">Đăng ký ngay</button>
                 </div>
             </div>
             <div class="col-12 col-md-4 my-2">
