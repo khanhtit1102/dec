@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8">
-                <h4>{{ __('home.thongtinsuutam') }}</h4>
+                &nbsp;
             </div>
             <div class="col-md-4">
                 <button type="button" data-toggle="modal" data-target="#tvtsModal" class="btn btn-lg btn-block btn-outline-warning">{{ __('home.tuvantuyensinh') }}</button>

@@ -18,8 +18,8 @@
           <ul class="dropdown-menu bg-md-primary">
             <li><a class="dropdown-item" href="{{ route('gioithieu','tong-quan') }}">{{ __('menu.tongquan') }}</a></li>
             <li><a class="dropdown-item" href="{{ route('gioithieu','chuc-nang-nhiem-vu') }}">{{ __('menu.chucnangnhiemvu') }}</a></li>
-            <li><a class="dropdown-item" href="{{ route('gioithieu','so-do-to-chuc') }}">{{ __('menu.sodotochuc') }}</a></li>
             <li><a class="dropdown-item" href="{{ route('gioithieu','ban-giam-doc') }}">{{ __('menu.bangiamdoc') }}</a></li>
+            <li><a class="dropdown-item" href="{{ route('gioithieu','so-do-to-chuc') }}">{{ __('menu.sodotochuc') }}</a></li>
           </ul>
         </li>
         <li><a class="nav-link" href="{{ route('regulations') }}" class="dropdown-item">{{ __('menu.quychequidinh') }}</a></li>
