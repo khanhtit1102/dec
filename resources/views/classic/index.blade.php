@@ -24,6 +24,7 @@
 @endsection
 
 @section('introvideo')
+<div class="container">
   <div class="row">
     <div class="col-md-6">
       <div class="ytb-video p-2">
@@ -39,6 +40,7 @@
       </div>
     </div>
   </div>
+</div>
 @endsection
 
 @section('maincontent')
