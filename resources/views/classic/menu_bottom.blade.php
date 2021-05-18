@@ -17,6 +17,7 @@
             </li> --}}
             <li class="nav-item"><a href="{{ route('contact') }}" class="nav-link">{{ __('menu.lienhe') }}</a></li>
             <li class="nav-item"><a href="#" class="nav-link">{{ __('menu.tienich') }}</a></li>
+            <li class="nav-item"><a target="_blank" href="http://qlvb.tnu.edu.vn/" class="nav-link">Quản lý văn bản</a></li>
         </ul>
     </div>
 </section>

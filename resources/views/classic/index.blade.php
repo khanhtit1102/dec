@@ -34,7 +34,7 @@
       </div>
     </div>
     <div class="col-md-6">
-      <div class="bg-primary text-white py-3">
+      <div class="bg-primary text-white py-5 text-center">
         <h3>Tra cứu điểm</h3>
         <h6>(đang xây dựng)</h6>
       </div>
