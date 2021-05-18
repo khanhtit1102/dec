@@ -23,11 +23,23 @@
   @include('classic.nganhdaotao')
 @endsection
 
-{{-- @section('introvideo')
-      <div class="ratio ratio-16x9">
-        <iframe src="https://www.youtube.com/embed/A6LitFDXzUY?controls=0" width="100%"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div> 
-@endsection --}}
+@section('introvideo')
+  <div class="row">
+    <div class="col-md-6">
+      <div class="ytb-video p-2">
+        <div class="ratio ratio-16x9">
+          <iframe src="https://www.youtube.com/embed/A6LitFDXzUY?controls=0" width="100%"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="bg-primary text-white">
+        <h3>Tra cứu điểm</h3>
+        <h6>(đang xây dựng)</h6>
+      </div>
+    </div>
+  </div>
+@endsection
 
 @section('maincontent')
   <div class="tab">
