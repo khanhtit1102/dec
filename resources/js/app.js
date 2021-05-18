@@ -35,6 +35,12 @@ var navigateNews = function(direction) {
 }
 
 jQuery(function() {
+    var ytbWidth = jQuery('.ytb-video').width();
+    var ytbHeight = ytbWidth*9/16;
+    console.log(ytbHeight);
+    jQuery('.ytb-video iframe').css('height',ytbHeight);
+    jQuery('.tracuudiem').css('height',ytbHeight);
+
     jQuery('.mobilenavbtn').on('click','button',function() {
         jQuery('#mainnav .nav').toggleClass('d-none d-block');
     });

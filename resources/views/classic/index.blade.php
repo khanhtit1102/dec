@@ -34,9 +34,41 @@
       </div>
     </div>
     <div class="col-md-6">
-      <div class="bg-primary text-white py-5 text-center">
-        <h3>Tra cứu điểm</h3>
-        <h6>(đang xây dựng)</h6>
+      <div class="tracuudiem bg-primary text-white py-5 d-flex justify-content-center align-items-center">
+        {{-- <h3 class="d-block">Tra cứu điểm</h3> --}}
+        <div class="row">
+          <div class="col">
+            <div class="form-group">
+              <h3>Tra cứu điểm cho học viên</h3>
+            </div>
+            <div class="form-group">
+              <label for="inputMSV">Nhập mã học viên</label>
+              <input type="text" name="inputMSV" id="inputMSV" class="form-control">
+            </div>
+            <div class="form-group">
+              <button class="btn btn-block btn-outline-warning" data-toggle="modal" data-target="#traCuuDiemModal">Tra cứu điểm</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="traCuuDiemModal" tabindex="-1" aria-labelledby="traCuuDiemModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-info text-white">
+        <h5 class="modal-title" id="traCuuDiemModalLabel">Thông tin tra cứu điểm học viên</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h4>ĐANG XÂY DỰNG</h4>
+        <h5>Vui lòng quay lại sau!</h5>
+      </div>
+      <div class="modal-footer bg-info">
+        <button type="button" class="btn btn-warning" data-dismiss="modal">Đóng</button>
       </div>
     </div>
   </div>
