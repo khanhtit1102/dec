@@ -79,7 +79,7 @@
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">{{ __('menu.hocviencanbiet') }}</a>
           <ul class="dropdown-menu bg-md-primary">
-            <li><a href="{{ route('hvcb','cac-mau-don') }}" class="dropdown-item">{{ __('menu.cacmaudon') }}</a></li>
+            <li><a href="{{ route('hvcb','cac-bieu-mau') }}" class="dropdown-item">{{ __('menu.cacbieumau') }}</a></li>
             {{-- <li><a href="{{ route('hvcb','cau-hoi-thuong-gap') }}" class="dropdown-item">{{ __('menu.cauhoithuonggap') }}</a></li> --}}
           </ul>
         </li>

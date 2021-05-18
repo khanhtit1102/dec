@@ -52,6 +52,8 @@
 
     @include('classic.footer')
     @if (!Str::contains(request()->header("User-Agent"),'Lighthouse'))
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v10.0&appId=235569260823943&autoLogAppEvents=1" nonce="TViio8po"></script>
       <!-- Load Facebook SDK for JavaScript -->
       <div id="fb-root"></div>
       <script>

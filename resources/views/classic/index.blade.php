@@ -31,7 +31,7 @@
 
 @section('maincontent')
   <div class="tab">
-    <h3 class="tab-header">Đào tạo</h3>
+    <h3 class="tab-header">Thông tin sưu tầm</h3>
     <div class="tab-body">
       <!-- Đổ danh sách bài viết -->
       @foreach ($items as $item)

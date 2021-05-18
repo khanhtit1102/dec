@@ -20,7 +20,7 @@
       </div>
     </div>
     <div class="tab scrollitem">
-      <h3 class="tab-header">Thông báo chung</h3>
+      <h3 class="tab-header">Thông báo</h3>
       <div class="tab-body">
         <div class="overflow-hidden newswrap">
         @foreach ($noti as $item)

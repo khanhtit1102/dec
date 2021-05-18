@@ -58,5 +58,6 @@ return [
     'tienich'           => 'Tiện ích',
     'gvgiangday'        => 'Giáo viên giảng dạy',
     'chuyengiahd'       => 'Chuyên gia hướng dẫn',
-    'ktvdbcl'           => 'Khảo thí và ĐBCL',     
+    'ktvdbcl'           => 'Khảo thí và ĐBCL',
+    'cacbieumau'        => 'Các biểu mẫu',     
 ];
