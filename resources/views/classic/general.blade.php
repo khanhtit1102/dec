@@ -25,11 +25,11 @@
 
     @yield('thongtinsuutam')
 
-    @yield('introvideo')
-
     @yield('khaigiang')
 
     @yield('nganhdaotao')
+
+    @yield('introvideo')  
 
     <section id="maincontent" class="my-2">
       <div class="container">
