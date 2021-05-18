@@ -33,9 +33,7 @@
             </div>
             <div class="col-12 col-md-4 my-2">
                 <div class="bg-primary text-white p-2 rounded text-center">
-                    <h5>Hoặc</h5>
-                    <h3 class="pb-1">Nếu bạn là một nhóm/cơ quan có nhu cầu học tập</h3>
-                    <p class="d-none"><i>(Số lượng từ 40 người)</i></p>
+                    <h5>Khai giảng các địa điểm khác</h5>
                     <button class="btn btn-block btn-warning" data-toggle="modal" data-request="molop" data-target="#registerRequest">Yêu cầu mở lớp</button>
                 </div>
             </div>
