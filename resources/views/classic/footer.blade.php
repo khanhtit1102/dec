@@ -22,7 +22,7 @@
           </div>
           <div class="col-md-3">
             <div>
-              <div class="fb-page" data-href="https://www.facebook.com/dec.tnu.edu.vn" data-tabs="" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/dec.tnu.edu.vn" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/dec.tnu.edu.vn">Trung tâm Đào tạo từ xa - Đại học Thái Nguyên</a></blockquote></div>
+              <div class="fb-page" data-href="https://www.facebook.com/dec.tnu.edu.vn" data-tabs="" data-width="100%" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/dec.tnu.edu.vn" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/dec.tnu.edu.vn">Trung tâm Đào tạo từ xa - Đại học Thái Nguyên</a></blockquote></div>
             </div>
             <div class="visit-info p-2">
               <h5 class="mb-1 text-center">Lượt truy cập</h5>
