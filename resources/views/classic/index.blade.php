@@ -27,14 +27,14 @@
 <div class="container">
   <div class="row">
     <div class="col-md-6">
-      <div class="ytb-video p-2">
+      <div class="ytb-video">
         <div class="ratio ratio-16x9">
           <iframe src="https://www.youtube.com/embed/A6LitFDXzUY?controls=0" width="100%"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </div>
     </div>
     <div class="col-md-6">
-      <div class="bg-primary text-white">
+      <div class="bg-primary text-white py-3">
         <h3>Tra cứu điểm</h3>
         <h6>(đang xây dựng)</h6>
       </div>
