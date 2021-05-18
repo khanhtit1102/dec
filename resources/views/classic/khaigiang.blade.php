@@ -9,7 +9,7 @@
                         <button class="btn btn-lg btn-outline-warning ngay my-1">20 ngày</button>
                         <button class="btn btn-lg btn-outline-warning gio my-1">21 giờ</button>
                         <button class="btn btn-lg btn-outline-warning phut my-1">22 phút</button>
-                        <button class="btn btn-lg btn-outline-warning giay my-1">23 giây</button>
+                        {{-- <button class="btn btn-lg btn-outline-warning giay my-1">23 giây</button> --}}
                     </div>
                     <div class="dangkyngay mt-3">
                         <button class="btn btn-warning btn-lg" data-toggle="modal" data-target="#registerRequest">Đăng ký ngay</a>
@@ -24,7 +24,7 @@
                         <button class="btn btn-lg btn-outline-warning ngay my-1">23 ngày</button>
                         <button class="btn btn-lg btn-outline-warning gio my-1">10 giờ</button>
                         <button class="btn btn-lg btn-outline-warning phut my-1">22 phút</button>
-                        <button class="btn btn-lg btn-outline-warning giay my-1">22 phút</button>
+                        {{-- <button class="btn btn-lg btn-outline-warning giay my-1">22 phút</button> --}}
                     </div>
                     <div class="dangkyngay mt-3">
                         <button class="btn btn-warning btn-lg" data-toggle="modal" data-target="#registerRequest">Đăng ký ngay</a>
@@ -104,12 +104,12 @@
             jQuery('.demnguochn .ngay').text(tmpHN[0] + ' ngày');
             jQuery('.demnguochn .gio').text(tmpHN[1] + ' giờ');
             jQuery('.demnguochn .phut').text(tmpHN[2] + ' phút');
-            jQuery('.demnguochn .giay').text(tmpHN[3] + ' giây');
+            // jQuery('.demnguochn .giay').text(tmpHN[3] + ' giây');
             var tmpHCM = timediff(kghcm.getTime(),cTime);
             jQuery('.demnguochcm .ngay').text(tmpHCM[0] + ' ngày');
             jQuery('.demnguochcm .gio').text(tmpHCM[1] + ' giờ');
             jQuery('.demnguochcm .phut').text(tmpHCM[2] + ' phút');
-            jQuery('.demnguochcm .giay').text(tmpHCM[3] + ' giây');
+            // jQuery('.demnguochcm .giay').text(tmpHCM[3] + ' giây');
             setTimeout(checkTime,1000);
         };
         jQuery(document).ready(function() {
