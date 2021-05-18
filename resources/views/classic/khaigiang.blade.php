@@ -33,7 +33,8 @@
             </div>
             <div class="col-12 col-md-4 my-2">
                 <div class="bg-primary text-white px-4 py-5 rounded text-center">
-                    <h5>Khai giảng tại các địa điểm khác</h5>
+                    <h2>Khai giảng</h2>
+                    <h3>tại các địa điểm khác.</h3>
                     <button class="btn btn-block btn-warning" data-toggle="modal" data-request="molop" data-target="#registerRequest">Xem thông tin</button>
                 </div>
             </div>
