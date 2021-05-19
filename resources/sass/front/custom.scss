@@ -31,7 +31,20 @@
     .newstitle {padding:5px;}
 }
 
+.feature-item-wrap {
+    min-height: 200px;
+    background-image: radial-gradient(circle, $gray,lighten($gray,20%));
+}
+#carouselTinNoiBat {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
 @media (min-width: 768px) {
+    #carouselTinNoiBat {
+        margin-left: auto;
+        margin-right: auto;
+    }
     .bg-md-primary {background-image: linear-gradient(to bottom right,$blue,darken($blue,20%));}
     .hovernav {
         .nav {

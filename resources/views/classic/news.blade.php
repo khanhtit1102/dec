@@ -1,6 +1,33 @@
-<section id="news" class="bg-white py-3">
+<section id="news" class="bg-white py-2">
     <div class="container">
-        <div class="row">
+        <h3 class="text-secondary d-flex justify-content-start border-bottom"><img class="mr-1" src="{{ asset('images/feature.svg') }}" width="28" height="28" alt="{{ __('home.featurednews') }}">{{ __('home.featurednews') }}</h3>
+        <div id="carouselTinNoiBat" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                @foreach ($featurednews as $item)
+                <li data-target="#carouselTinNoiBat" data-slide-to="{{ $loop->index }}" @if($loop->index==0) class="active" @endif></li>
+                @endforeach
+            </ol>
+            <div class="carousel-inner">
+                @foreach ($featurednews as $item)
+                    <div class="carousel-item @if($loop->index==0) active @endif">
+                        <div class="feature-item-wrap d-flex justify-content-center align-items-center text-center">
+                            <div class="newstitle h5">
+                                <a class="text-primary" href="{{ route('newsdetail',$item->alias) }}">{{ Str::words($item->post_details->first()->name,50) }}</a>
+                            </div>
+                        </div>
+                    </div>
+                @endforeach
+            </div>
+            <a class="carousel-control-prev" href="#carouselTinNoiBat" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselTinNoiBat" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        {{-- <div class="row">
             <div class="col-md-8">
                 <div class="row">
                     <div class="col-8"><h3 class="text-secondary d-flex justify-content-start border-bottom"><img class="mr-1" src="{{ asset('images/newspaper.svg') }}" width="28" height="28" alt="{{ __('home.news_events') }}">{{ __('home.news_events') }}</h3></div>
@@ -48,6 +75,6 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
     </div>
 </section>

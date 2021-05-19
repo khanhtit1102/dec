@@ -7,9 +7,9 @@
               <h4 class="mb-1">Trung tâm Đào tạo Từ xa</h5>
               <h5 class="mb-2">Đại học Thái Nguyên</h6>
               <div class="mb-1 d-flex justify-content-between"><div>Bộ phận Tuyển sinh:</div> <div><a class="text-white" href="tel:02083646111">02083 646 111</a></div></div>
-              <div class="mb-1 d-flex justify-content-between"><div>Bộ phận Hành chính:</div> <div><a class="text-white" href="tel:02083648989">0208 364 89 89</a></div></div>
-              <div class="mb-1 d-flex justify-content-between"><div>Bộ phận Khảo thí:</div> <div><a class="text-white" href="tel:02083646777">02083 646 777</a></div></div>
               <div class="mb-1 d-flex justify-content-between"><div>Bộ phận Đào tạo:</div> <div><a class="text-white" href="tel:02083754226">02083 754 226</a></div></div>
+              <div class="mb-1 d-flex justify-content-between"><div>Bộ phận Khảo thí:</div> <div><a class="text-white" href="tel:02083646777">02083 646 777</a></div></div>
+              <div class="mb-1 d-flex justify-content-between"><div>Bộ phận Hành chính:</div> <div><a class="text-white" href="tel:02083648989">0208 364 89 89</a></div></div>
               <div class="mb-1 d-flex justify-content-between"><div>Email:</div> <div><a class="text-white" href="mailto:ttdttx@tnu.edu.vn">ttdttx@tnu.edu.vn</a></div></div>
               <div class="mb-1 d-flex justify-content-between"><div>Địa chỉ:</div> <div>Phường Tân Thịnh </div></div>
               <div class="mb-1 d-flex justify-content-end"><div>tp Thái Nguyên - Tỉnh Thái Nguyên</div></div>

@@ -44,26 +44,10 @@
                 </div>
             </div>
             <div class="col col-12 col-md-4 my-1">
-                <div type="button" data-toggle="modal" data-target="#nganhDaotao" data-majorname="Luật kinh tế" data-majordesc="Giới thiệu ngành Luật kinh tế" class="btn btn-block btn-outline-info">
-                    <div class="row">
-                        <div class="col-3 d-flex justify-content-center align-items-center"><img src="{{ asset('images/majors/luatkinhte.svg') }}" alt="Luật kinh tế" title="Luật kinh tế" class="img-fluid"/></div>
-                        <div class="col-9 d-flex justify-content-center align-items-center"><h3 class="m-0">Luật kinh tế</h3></div>
-                    </div>                                            
-                </div>
-            </div>
-            <div class="col col-12 col-md-4 my-1">
                 <div type="button" data-toggle="modal" data-target="#nganhDaotao" data-majorname="Kế toán" data-majordesc="Giới thiệu ngành Kế toán" class="btn btn-block btn-outline-info">
                     <div class="row">
                         <div class="col-3 d-flex justify-content-center align-items-center"><img src="{{ asset('images/majors/ketoan.svg') }}" alt="Kế toán" title="Kế toán" class="img-fluid"/></div>
                         <div class="col-9 d-flex justify-content-center align-items-center"><h3 class="m-0">Kế toán</h3></div>
-                    </div>                                            
-                </div>
-            </div>
-            <div class="col col-12 col-md-4 my-1">
-                <div type="button" data-toggle="modal" data-target="#nganhDaotao" data-majorname="Quản trị kinh doanh" data-majordesc="Giới thiệu ngành Quản trị kinh doanh" class="btn btn-block btn-outline-info">
-                    <div class="row">
-                        <div class="col-3 d-flex justify-content-center align-items-center"><img src="{{ asset('images/majors/quantrikinhdoanh.svg') }}" alt="Quản trị kinh doanh" title="Quản trị kinh doanh" class="img-fluid"/></div>
-                        <div class="col-9 d-flex justify-content-center align-items-center"><h3 class="m-0">Quản trị kinh doanh</h3></div>
                     </div>                                            
                 </div>
             </div>
@@ -75,6 +59,22 @@
                     </div>                                            
                 </div>
             </div>
+            <div class="col col-12 col-md-4 my-1">
+                <div type="button" data-toggle="modal" data-target="#nganhDaotao" data-majorname="Luật kinh tế" data-majordesc="Giới thiệu ngành Luật kinh tế" class="btn btn-block btn-outline-info">
+                    <div class="row">
+                        <div class="col-3 d-flex justify-content-center align-items-center"><img src="{{ asset('images/majors/luatkinhte.svg') }}" alt="Luật kinh tế" title="Luật kinh tế" class="img-fluid"/></div>
+                        <div class="col-9 d-flex justify-content-center align-items-center"><h3 class="m-0">Luật kinh tế</h3></div>
+                    </div>                                            
+                </div>
+            </div>            
+            <div class="col col-12 col-md-4 my-1">
+                <div type="button" data-toggle="modal" data-target="#nganhDaotao" data-majorname="Quản trị kinh doanh" data-majordesc="Giới thiệu ngành Quản trị kinh doanh" class="btn btn-block btn-outline-info">
+                    <div class="row">
+                        <div class="col-3 d-flex justify-content-center align-items-center"><img src="{{ asset('images/majors/quantrikinhdoanh.svg') }}" alt="Quản trị kinh doanh" title="Quản trị kinh doanh" class="img-fluid"/></div>
+                        <div class="col-9 d-flex justify-content-center align-items-center"><h3 class="m-0">Quản trị kinh doanh</h3></div>
+                    </div>                                            
+                </div>
+            </div>            
         </div>
     </div>
 </section>
