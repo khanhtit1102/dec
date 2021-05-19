@@ -11,7 +11,7 @@
                 @foreach ($featurednews as $item)
                     <div class="carousel-item @if($loop->index==0) active @endif">
                         <div class="feature-item-wrap d-flex justify-content-center align-items-center text-center">
-                            <div class="newstitle h5">
+                            <div class="newstitle h2">
                                 <a class="text-primary" href="{{ route('newsdetail',$item->alias) }}">{{ Str::words($item->post_details->first()->name,50) }}</a>
                             </div>
                         </div>
