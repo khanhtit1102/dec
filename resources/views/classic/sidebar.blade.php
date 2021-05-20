@@ -12,7 +12,7 @@
                     <span class="monthyear">{{ $item->created_at->format('m') }}/{{ $item->created_at->format('Y') }}</span>
                   </span>
                 </div>
-                <div class="col-9 pl-0"><h6 class="m-0"><a href="{{ route('news',$item) }}">{{ Str::words($item->post_details->first()->name, 8, '...') }}</a></h6></div>
+                <div class="col-9 pl-0"><h6 class="m-0"><a href="{{ route('newsdetail',$item) }}">{{ Str::words($item->post_details->first()->name, 8, '...') }}</a></h6></div>
               </div>                  
             </div>    
           @endforeach
