@@ -7,6 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/jquery.jdSlider.css') }}" rel="stylesheet">
     {{-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet"> --}}
     @stack('styles')
 
@@ -81,6 +82,26 @@
       </div>    
     @endif
     <script src="{{ asset('js/app.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('js/jquery.jdSlider-latest.min.js') }}" type="text/javascript"></script>
+    <script>
+      window.onload = function () {
+          jQuery('.slider3-3').jdSlider({
+              wrap: '.slide-inner',
+              slideShow: 6,
+              slideToScroll: 1,
+              isAuto: true,
+              isLoop: true,
+              margin: 10,
+              responsive: [{
+                  viewSize: 768,
+                  settings: {
+                      slideShow: 3,
+                      slideToScroll: 1
+                  }
+              }]
+          });
+      };
+    </script>
     @stack('scripts')
   </body>
 </html>
