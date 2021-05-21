@@ -33,7 +33,7 @@
 
 .feature-item-wrap {
     min-height: 200px;
-    background-image: radial-gradient(circle, $gray,lighten($gray,20%));
+    background-image: radial-gradient(circle, lighten($gray,25%), $gray);
 }
 #carouselTinNoiBat {
     margin-left: -15px;
