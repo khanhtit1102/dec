@@ -59,5 +59,6 @@ return [
     'gvgiangday'        => 'Giáo viên giảng dạy',
     'chuyengiahd'       => 'Chuyên gia hướng dẫn',
     'ktvdbcl'           => 'Khảo thí và ĐBCL',
-    'cacbieumau'        => 'Các biểu mẫu',     
+    'cacbieumau'        => 'Các biểu mẫu',
+    'mauhoso'           => 'Mẫu hồ sơ tuyển sinh',     
 ];

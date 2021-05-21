@@ -46,6 +46,7 @@
             {{-- <li><a href="#" class="dropdown-item">{{ __('menu.lichkhaigiang') }}</a></li> --}}
             <li><a href="{{ route('tuyensinh','tu-van-tuyen-sinh') }}" class="dropdown-item">{{ __('menu.tuvantuyensinh') }}</a></li>
             <li><a class="dropdown-item" href="{{ route('tuyensinh','huong-dan-hoc-vien') }}">{{ __('menu.huongdanhocvien') }}</a></li>
+            <li><a href="{{ route('tuyensinh','mau-ho-so-tuyen-sinh') }}" class="dropdown-item">{{ __('menu.mauhoso') }}</a></li>
           </ul>
         </li>
 
