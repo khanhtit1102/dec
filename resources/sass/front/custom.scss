@@ -34,6 +34,7 @@
 .feature-item-wrap {
     min-height: 200px;
     background-image: radial-gradient(circle, lighten($gray,25%), $gray);
+    background-position: center;background-repeat: no-repeat;background-size: 100% 200px;
 }
 #carouselTinNoiBat {
     margin-left: -15px;
@@ -75,5 +76,8 @@
                 width: 100%;   
             }
         }
+    }
+    .feature-item-wrap {
+        background-size: auto;
     }
 }

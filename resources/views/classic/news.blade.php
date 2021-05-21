@@ -17,7 +17,7 @@
                                 </div>
                             </div>
                         @else
-                            <div class="feature-item-wrap d-flex justify-content-center align-items-center text-center" style="background-image: url('{{ $item->media->first()->link }}');background-position: center;background-repeat: no-repeat;background-size: 100% 200px;">
+                            <div class="feature-item-wrap d-flex justify-content-center align-items-center text-center" style="background-image: url('{{ $item->media->first()->link }}');">
                             {{-- <a class="text-white" href="{{ route('newsdetail',$item->alias) }}"><img src="{{ $item->media->first()->link }}" class="d-block w-100" alt="{{ $item->alias }}"></a> --}}
                             <div class="newstitle h3">
                                 <a class="text-white" href="{{ route('newsdetail',$item->alias) }}">{{ Str::words($item->post_details->first()->name,30) }}</a>
