@@ -12,7 +12,7 @@
                     <div class="carousel-item @if($loop->index==0) active @endif">
                         @if(empty($item->media->first()->link))
                             <div class="feature-item-wrap d-flex justify-content-center align-items-center text-center">
-                                <div class="newstitle h3">
+                                <div class="newstitle h3 p-1">
                                     <a class="text-primary" href="{{ route('newsdetail',$item->alias) }}">{{ Str::words($item->post_details->first()->name,50) }}</a>
                                 </div>
                             </div>

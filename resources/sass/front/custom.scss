@@ -36,6 +36,9 @@
     background-image: radial-gradient(circle, lighten($gray,25%), $gray);
     background-position: center;background-repeat: no-repeat;background-size: 100% 200px;
 }
+.feature-item-wrap .newstitle {
+    background: rgba(0,0,0,0.75);
+}
 #carouselTinNoiBat {
     margin-left: -15px;
     margin-right: -15px;
