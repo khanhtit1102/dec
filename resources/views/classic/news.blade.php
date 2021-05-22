@@ -12,14 +12,14 @@
                     <div class="carousel-item @if($loop->index==0) active @endif">
                         @if(empty($item->media->first()->link))
                             <div class="feature-item-wrap d-flex justify-content-center align-items-center text-center">
-                                <div class="newstitle h3 p-1">
+                                <div class="newstitle h3 p-2">
                                     <a class="text-primary" href="{{ route('newsdetail',$item->alias) }}">{{ Str::words($item->post_details->first()->name,50) }}</a>
                                 </div>
                             </div>
                         @else
                             <div class="feature-item-wrap d-flex justify-content-center align-items-center text-center" style="background-image: url('{{ $item->media->first()->link }}');">
                             {{-- <a class="text-white" href="{{ route('newsdetail',$item->alias) }}"><img src="{{ $item->media->first()->link }}" class="d-block w-100" alt="{{ $item->alias }}"></a> --}}
-                            <div class="newstitle h3">
+                            <div class="newstitle h3 p-2">
                                 <a class="text-white" href="{{ route('newsdetail',$item->alias) }}">{{ Str::words($item->post_details->first()->name,30) }}</a>
                             </div>
                             </div>
