@@ -135,8 +135,8 @@ class PostController extends Controller
         if($post->update($request->only(['category_id','alias', 'published','is_featured','ordering']))) {
             $post->post_details()->update($request->only(['name','body','desc','keywords','title','language']));
             
+            $post->media()->delete();
             if(!empty($request->get('medialist'))) {
-                $post->media()->delete();
                 foreach ($request->get('medialist') as $key => $value) {
                     $media = new Media;
                     $media->link = $value;
@@ -144,8 +144,8 @@ class PostController extends Controller
                 }
             }
             
+            $post->attachments()->delete();
             if(!empty($request->get('attachmentlist'))) {
-                $post->attachments()->delete();
                 foreach ($request->get('attachmentlist') as $key => $value) {
                     $attachment = new Attachment;
                     $attachment->link = $value['link'];

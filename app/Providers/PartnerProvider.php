@@ -33,7 +33,7 @@ class PartnerProvider extends ServiceProvider
         View::composer('classic.news', function ($view) {
             $news = Post::with('post_details')->where('category_id','=','3')->where('is_featured',0)->latest()->paginate(10);
             $view->with('news',$news);
-            $featurednews = Post::with('post_details')->where('is_featured',1)->latest()->paginate(16);
+            $featurednews = Post::with('post_details')->where('is_featured',1)->orderBy('ordering','desc')->latest()->paginate(16);
             $view->with('featurednews',$featurednews);
         });
         View::composer('classic.thongtinsuutam', function ($view) {

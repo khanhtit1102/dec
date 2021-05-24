@@ -221,7 +221,7 @@
                         </div>
                         <div class="form-group col-md-2">
                             <label class="d-none d-md-block">&nbsp;</label>
-                            <button class="btn btn-outline-info btn-block">{{ __('admin.attachment_add') }}</button>
+                            <button type="button" class="btn btn-outline-info btn-block">{{ __('admin.attachment_add') }}</button>
                         </div>
                     </div>
                     <div id="attachmentList">
@@ -233,7 +233,7 @@
                                     <input type="hidden" name="attachmentlist[{{ $loop->index }}][link]" value="{{ $item->link }}">    
                                 </div>
                                 <div class="col-2 mb-2">
-                                    <button class="btn btn-block btn-outline-danger">{{ __('admin.delete') }}</button>
+                                    <button type="button" class="deleteAttachment btn btn-block btn-outline-danger">{{ __('admin.delete') }}</button>
                                 </div>
                             </div>
                         @endforeach    
