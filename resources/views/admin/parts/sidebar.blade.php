@@ -18,6 +18,11 @@
         <i class="fas fa-fw fa-tachometer-alt"></i>
         <span>{{ __('admin.dashboard') }}</span></a>
     </li>
+    <li class="nav-item {{ request()->routeIs('admin.settings')?'active':'' }}">
+      <a class="nav-link" href="{{ route('admin.settings') }}">
+        <i class="fas fa-fw fa-cogs"></i>
+        <span>{{ __('admin.settings') }}</span></a>
+    </li>
 
     <!-- Divider -->
     <hr class="sidebar-divider">

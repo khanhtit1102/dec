@@ -6,6 +6,7 @@ use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\View;
 use App\Partner;
 use App\Post;
+use Illuminate\Support\Facades\DB;
 
 class PartnerProvider extends ServiceProvider
 {
@@ -26,6 +27,10 @@ class PartnerProvider extends ServiceProvider
      */
     public function boot()
     {
+        View::composer(['classic.khaigiang','admin.settings.settings'], function ($view) {
+            $khaigiang = DB::table('settings')->first();
+            $view->with('khaigiang',$khaigiang);
+        });
         View::composer('classic.doitac', function ($view) {
             $doitac = Partner::where('published',1)->get();
             $view->with('doitac',$doitac);

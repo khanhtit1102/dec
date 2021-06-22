@@ -41,6 +41,8 @@ Route::resource('posts','PostController');
 
 Route::namespace('Admin')->prefix('admin')->name('admin.')->middleware('auth')->group(function () {
     Route::get('/','AdminController@dashboard')->name('dashboard');
+    Route::get('settings','AdminController@settings')->name('settings');
+    Route::post('updateSettings','AdminController@updateSettings')->name('updateSettings');
     Route::prefix('users')->name('users.')->group(function() {
         Route::get('datatable','UserController@getDatatable')->name('datatable');
         Route::any('/{user}/publish','UserController@publish')->name('publish');

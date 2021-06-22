@@ -4,7 +4,7 @@
             <div class="col-md-4 my-2">
                 <div class="khaigiang khaigianghn text-center bg-primary text-white p-4 rounded">
                     <h3>Khai giảng tại Hà Nội</h3>
-                    <h5>Ngày 11/07/2021</h5>
+                    <h5>Ngày {{ \Carbon\Carbon::parse($khaigiang->khaigiang_HN)->format('d/m/Y') }}</h5>
                     <div class="demnguoc demnguochn">
                         <button class="btn btn-lg btn-outline-warning ngay my-1">20 ngày</button>
                         <button class="btn btn-lg btn-outline-warning gio my-1">21 giờ</button>
@@ -19,7 +19,7 @@
             <div class="col-md-4 my-2">
                 <div class="khaigiang khaigianghcm text-center bg-primary text-white p-4 rounded">
                     <h3>Khai giảng tại Hồ Chí Minh</h3>
-                    <h5>Ngày 06/06/2021</h5>
+                    <h5>Ngày {{ \Carbon\Carbon::parse($khaigiang->khaigiang_HCM)->format('d/m/Y') }}</h5>
                     <div class="demnguoc demnguochcm">
                         <button class="btn btn-lg btn-outline-warning ngay my-1">23 ngày</button>
                         <button class="btn btn-lg btn-outline-warning gio my-1">10 giờ</button>
@@ -98,8 +98,8 @@
             return [dd,hh,mm,ss];
         };
         var checkTime = function() {
-            var kghn  = new Date("07/11/2021 8:00:00");
-            var kghcm = new Date("07/18/2021 8:00:00");
+            var kghn  = new Date("{{ \Carbon\Carbon::parse($khaigiang->khaigiang_HN)->format('m/d/Y') }} 8:00:00");
+            var kghcm = new Date("{{ \Carbon\Carbon::parse($khaigiang->khaigiang_HCM)->format('m/d/Y') }} 8:00:00");
             var cTime = Date.now();
             var tmpHN = timediff(kghn.getTime(),cTime);
             jQuery('.demnguochn .ngay').text(tmpHN[0] + ' ngày');

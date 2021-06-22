@@ -156,4 +156,8 @@ return [
     'usefulnews_edit'       => 'Chỉnh sửa TTST',
     'usefulnews_check'      => 'Duyệt TTST',
 
+    'settings'              => 'Cài đặt chung',
+    'khaigiang_hn'          => 'Ngày khai giảng tại Hà Nội',
+    'khaigiang_hcm'         => 'Ngày khai giảng tại Hồ Chí Minh',
+
 ];
