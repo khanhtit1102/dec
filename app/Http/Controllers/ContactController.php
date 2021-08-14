@@ -25,9 +25,11 @@ class ContactController extends Controller
                     ?? $_SERVER['HTTP_FORWARDED_FOR'] 
                     ?? $_SERVER['REMOTE_ADDR'] 
                     ?? '0.0.0.0';
-        $request->merge(['ipaddress'=>$clientIP]);
+        
+        $data = $request->only(['tvtsten','tvtssdt','tvtsnganh','tvtsdiachi']);
+        array_push($data,['ipadress'=>$clientIP]);
         //Send 
-        Mail::to('khanhnh@tnu.edu.vn')->send(new YeuCauTuVan($request->only(['tvtsten','tvtssdt','tvtsnganh','tvtsdiachi','ipaddress'])));
+        Mail::to('khanhnh@tnu.edu.vn')->send(new YeuCauTuVan($data));
 
         return redirect()->route('home')->with('message','Cảm ơn bạn quan tâm đến chương trình ! Chúng tôi sẽ trả lời sớm nhất có thể.');
     }
