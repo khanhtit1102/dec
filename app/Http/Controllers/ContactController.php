@@ -27,8 +27,7 @@ class ContactController extends Controller
                     ?? '0.0.0.0';
         
         $data = $request->only(['tvtsten','tvtssdt','tvtsnganh','tvtsdiachi']);
-        $data['ipaddress'] = $clientIP;
-        // dd($data);
+        $data['ipaddress'] = 'https://www.ip2location.com/demo/' . $clientIP;
         //Send 
         Mail::to('khanhnh@tnu.edu.vn')->send(new YeuCauTuVan($data));
 
