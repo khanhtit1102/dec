@@ -28,6 +28,7 @@ class ContactController extends Controller
         
         $data = $request->only(['tvtsten','tvtssdt','tvtsnganh','tvtsdiachi']);
         $data['ipaddress'] = $clientIP;
+        dd($data);
         //Send 
         Mail::to('khanhnh@tnu.edu.vn')->send(new YeuCauTuVan($data));
 
