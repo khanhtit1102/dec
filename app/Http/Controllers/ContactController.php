@@ -17,8 +17,17 @@ class ContactController extends Controller
             'tvtsnganh' => 'nullable',
             'tvtsdiachi'=> 'nullable'
         ]);
+        $clientIP = $_SERVER['HTTP_CLIENT_IP'] 
+                    ?? $_SERVER["HTTP_CF_CONNECTING_IP"] # when behind cloudflare
+                    ?? $_SERVER['HTTP_X_FORWARDED'] 
+                    ?? $_SERVER['HTTP_X_FORWARDED_FOR'] 
+                    ?? $_SERVER['HTTP_FORWARDED'] 
+                    ?? $_SERVER['HTTP_FORWARDED_FOR'] 
+                    ?? $_SERVER['REMOTE_ADDR'] 
+                    ?? '0.0.0.0';
+        $request->merge(['ipaddress'=>$clientIP]);
         //Send 
-        Mail::to('khanhnh@tnu.edu.vn')->send(new YeuCauTuVan($request->only(['tvtsten','tvtssdt','tvtsnganh','tvtsdiachi'])));
+        Mail::to('khanhnh@tnu.edu.vn')->send(new YeuCauTuVan($request->only(['tvtsten','tvtssdt','tvtsnganh','tvtsdiachi','ipaddress'])));
 
         return redirect()->route('home')->with('message','Cảm ơn bạn quan tâm đến chương trình ! Chúng tôi sẽ trả lời sớm nhất có thể.');
     }
