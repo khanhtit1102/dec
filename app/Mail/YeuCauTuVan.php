@@ -30,6 +30,6 @@ class YeuCauTuVan extends Mailable
      */
     public function build()
     {
-        return $this->subject("Yêu cầu tư vấn tuyển sinh mới!")->markdown('emails.tuyensinh.yeucautuvan');
+        return $this->subject("Yêu cầu hỗ trợ kỹ thuật")->markdown('emails.tuyensinh.yeucautuvan');
     }
 }
