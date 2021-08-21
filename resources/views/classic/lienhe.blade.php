@@ -15,7 +15,7 @@
                 {{ session('message') }}
             </div>    
         @endif
-        <form action="{{ route('contact') }}" class="border-bottom mb-2" method="POST">
+        <form action="{{ route('contactpost') }}" class="border-bottom mb-2" method="POST">
             @csrf
             <div class="form-group">
                 <label for="frmName">Họ tên</label>

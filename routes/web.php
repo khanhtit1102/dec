@@ -34,7 +34,7 @@ Route::get('khao-thi-va-dam-bao-chat-luong','HomeController@index')->name('ktvdb
 Route::get('/checknews','UsefulNewsController@checkNewspaper')->name('checknews');
 
 Route::post('tvts', 'ContactController@tvts')->name('tvts');
-Route::post('lien-he','ContactController@contact')->name('contact');
+Route::post('lien-he','ContactController@contact')->name('contactpost');
 Route::post('tim-kiem', 'SearchController@search')->name('search');
 
 Route::resource('posts','PostController');
