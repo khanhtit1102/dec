@@ -44,6 +44,18 @@
     margin-right: -15px;
 }
 
+.banner {
+    top: 145px;
+    z-index: 9999;
+    img {width: 160px;}
+    &-left {
+        left: 20px;
+    }
+    &-right {
+        right: 20px;
+    }
+}
+
 @media (min-width: 768px) {
     #carouselTinNoiBat {
         margin-left: auto;

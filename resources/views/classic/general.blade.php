@@ -22,6 +22,10 @@
       @include('classic.navigation')
     </div>
 
+    <div id="banner">
+      @include('classic.banner')  
+    </div>
+
     @yield('slide')
 
     @yield('thongtinsuutam')

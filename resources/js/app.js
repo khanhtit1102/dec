@@ -33,8 +33,21 @@ var navigateNews = function(direction) {
         
     }       
 }
-
+var myScrollingId;
+var myScrollingFn = function() {
+    let stTop = jQuery('.sticky-top').position();
+    let pTop = stTop.top + 39;
+    jQuery('.banner').animate({top: pTop},500,"linear")
+}
 jQuery(function() {
+    jQuery(window).on('scroll',function(e) {
+        if(myScrollingId)
+            clearTimeout(myScrollingId);
+        myScrollingId = setTimeout(myScrollingFn,333)
+    });
+    console.log(jQuery(window).width());
+    if(jQuery(window).width()<750)
+        jQuery('#bannerMobile').modal();
     var ytbWidth = jQuery('.ytb-video').width();
     var ytbHeight = ytbWidth*9/16;
     console.log(ytbHeight);
