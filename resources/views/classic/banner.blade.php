@@ -16,7 +16,7 @@
           <div class="modal-content">
             <div class="modal-body">
               <a href="https://dec.tnu.edu.vn/tin-tuc/trung-tam-dao-tao-tu-xa-dai-hoc-thai-nguyen-tich-cuc-chu-dong-trong-phong-chong-dai-dich-covid-19-gop-phan-thuc-hien-thang-loi-nhiem-vu-nam-hoc-2021-2022">
-              <img class="img-fluid" src="{{ asset('images/banner/banner-mobile.png') }}" alt="Banner Mobile Trung tâm Đào tạo từ xa - ĐHTN">
+                <img class="img-fluid" src="{{ asset('images/banner/banner-mobile.png') }}" alt="Banner Mobile Trung tâm Đào tạo từ xa - ĐHTN">
               </a>
             </div>
           </div>
