@@ -80,7 +80,8 @@
       <!-- Your Chat Plugin code -->
       <div class="fb-customerchat"
         attribution=setup_tool
-        page_id="113337770019959"
+        {{-- page_id="113337770019959" --}}
+        page_id="103308385511399"
   logged_in_greeting="Xin chào! Trung tâm đào tạo từ xa - Đai học Thái Nguyên sẵn sàng trợ giúp!"
   logged_out_greeting="Xin chào! Trung tâm đào tạo từ xa - Đai học Thái Nguyên sẵn sàng trợ giúp!">
       </div>    

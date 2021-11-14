@@ -7,9 +7,6 @@
                 <div>
                     <img class="img-fluid py-1" src="{{ asset('images/qrcode-dec.svg') }}" width="60" height="60" alt="Dai hoc online">
                 </div>
-                <div>
-                    <a class="text-white h3 py-1" href="tel:+84961555098">Hotline: 0961 555 098</a>
-                </div>
             </div>
         </div>
     </div>
