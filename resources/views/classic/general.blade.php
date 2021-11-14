@@ -12,7 +12,7 @@
     @stack('styles')
 
     <title>@yield('pagetitle',"Trung tâm Đào tạo Từ xa - Đại học Thái Nguyên")</title>
-    @yield('metatag')
+    @stack('metatag')
   </head>
   <body>
     

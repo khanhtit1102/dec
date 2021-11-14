@@ -2,6 +2,16 @@
 
 @section('pagetitle', $post->post_details->first()->name . ' - Trung tâm Đào tạo từ xa - ĐHTN' )
 
+@push('metatag')
+<meta property="og:url"                content="{{ url()->current() }}" />
+<meta property="og:type"               content="website" />
+<meta property="og:title"              content="Trung tâm Đào tạo Từ xa - Đại Học Thái Nguyên" />
+<meta property="og:description"        content="{{ $post->post_details->first()->name }}" />
+@if(isset($post->media->first()->link))
+<meta property="og:image"              content="{{ asset($post->media->first()->link) }}" />
+@endif
+@endpush
+
 @section('maincontent')
   <div class="tab">
     <h3 class="tab-header">{{ $post->post_details->first()->name }}</h3>
