@@ -9,8 +9,6 @@ Thông tin cụ thể như sau:
 | {{ $data['tvtsten'] }} | {{ $data['tvtssdt'] }} | {{ $data['tvtsnganh'] }} | {{ $data['tvtsdiachi'] }} |
 @endcomponent
 
-IP: {{ $data['ipaddress'] }}
-
 Cảm ơn,<br>
 {{ config('app.name') }}
 @endcomponent
