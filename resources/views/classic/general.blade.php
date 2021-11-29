@@ -82,8 +82,9 @@
         attribution=setup_tool
         {{-- page_id="113337770019959" --}}
         page_id="103308385511399"
-  logged_in_greeting="Xin chào! Trung tâm đào tạo từ xa - Đai học Thái Nguyên sẵn sàng trợ giúp!"
-  logged_out_greeting="Xin chào! Trung tâm đào tạo từ xa - Đai học Thái Nguyên sẵn sàng trợ giúp!">
+        greeting_dialog_delay="20"
+        logged_in_greeting="Xin chào! Trung tâm đào tạo từ xa - Đai học Thái Nguyên sẵn sàng trợ giúp!"
+        logged_out_greeting="Xin chào! Trung tâm đào tạo từ xa - Đai học Thái Nguyên sẵn sàng trợ giúp!">
       </div>    
     @endif
     <script src="{{ asset('js/app.js') }}" type="text/javascript"></script>

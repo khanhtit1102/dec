@@ -29,7 +29,7 @@
     <div class="col-md-6">
       <div class="ytb-video">
         <div class="ratio ratio-16x9">
-          <iframe src="https://www.youtube.com/embed/A6LitFDXzUY?controls=0" width="100%"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe title="Giới thiệu về Trung tâm Đào tạo Từ xa" srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/A6LitFDXzUY?autoplay=1><img src=https://img.youtube.com/vi/A6LitFDXzUY/hqdefault.jpg alt='Giới thiệu về Trung tâm Đào tạo Từ xa'><span>▶</span></a>" src="https://www.youtube.com/embed/A6LitFDXzUY?controls=0" width="100%"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </div>
     </div>
