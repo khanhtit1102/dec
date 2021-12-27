@@ -28,7 +28,7 @@
 
     @yield('slide')
 
-    @yield('thongtinsuutam')
+    {{-- @yield('thongtinsuutam') --}}
 
     @yield('khaigiang')
 

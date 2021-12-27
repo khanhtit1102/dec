@@ -56,8 +56,9 @@
             <li class="dropright">
               <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">{{ __('menu.bacongkhai') }}</a>
               <ul class="dropdown-menu bg-md-primary">
+                  <li><a href="{{ route('bck','ba-cong-khai-2021-2022') }}" class="dropdown-item">Ba công khai 2021 - 2022</a></li>
                   <li><a href="{{ route('bck','co-so-vat-chat') }}" class="dropdown-item">{{ __('menu.cosovatchat') }}</a></li>
-                  <li><a href="{{ route('staff') }}" class="dropdown-item">{{ __('menu.doingucanbo') }}</a></li>
+                  {{-- <li><a href="{{ route('staff') }}" class="dropdown-item">{{ __('menu.doingucanbo') }}</a></li> --}}
                   <li class="dropright">
                       <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">{{ __('menu.doingugiaovien') }}</a>
                       <ul class="dropdown-menu bg-md-primary">
