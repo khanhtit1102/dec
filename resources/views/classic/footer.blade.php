@@ -13,7 +13,7 @@
               <div class="m-1 d-flex justify-content-between border-top"><div>Bộ phận Hành chính:</div> <div><a class="text-white" href="tel:02083648989">0208 364 89 89</a></div></div>
               <div class="m-1 d-flex justify-content-between border-top"><div>PGĐ <strong>Đoàn Đức Hải:</strong></div> <div><a class="text-white" href="tel:0913089612">0913 089 612</a></div></div>
               <div class="m-1 d-flex justify-content-between border-top"><div>PGĐ <strong>Trương Hữu Dũng:</strong></div> <div><a class="text-white" href="tel:0912221821">0912 221 821</a></div></div>
-              <div class="m-1 d-flex justify-content-between border-top border-bottom"><div>PGĐ Đại Học Thái Nguyên - Giám đốc Trung tâm<br /><strong>PGS.TS. Nguyễn Hữu Công:</strong></div> <div><a class="text-white" href="tel:0208 360 9999">0208 360 9999</a></div></div>
+              <div class="m-1 d-flex justify-content-between border-top border-bottom"><div>PGĐ Đại Học Thái Nguyên - Giám đốc Trung tâm<br /><strong>PGS.TS. Nguyễn Hữu Công:</strong></div> <div><a class="text-white" href="tel:0913 589 758">0913 589 758</a></div></div>
               
             </div>  
           </div>
