@@ -5,7 +5,7 @@
           <div class="col-md-5">
             <div class="contact-info p-2">
               <h4 class="m-1">Trung tâm Đào tạo Từ xa - Đại học Thái Nguyên</h4>
-              <div class="m-1 d-flex justify-content-between border-top"><div>Email:</div> <div><a class="text-white" href="mailto:ttdttx@tnu.edu.vn">ttdttx@tnu.edu.vn</a></div></div>
+              <div class="m-1 d-flex justify-content-between border-top d-none"><div>Email:</div> <div><a class="text-white" href="mailto:ttdttx@tnu.edu.vn">ttdttx@tnu.edu.vn</a></div></div>
               <div class="m-1 d-flex justify-content-between border-top"><div>Địa chỉ:</div> <div>Phường Tân Thịnh - TP Thái Nguyên</div></div>
               <div class="m-1 d-flex justify-content-between border-top"><div>Bộ phận Tuyển sinh:</div> <div><a class="text-white" href="tel:02083646111">02083 646 111</a></div></div>
               <div class="m-1 d-flex justify-content-between border-top"><div>Bộ phận Đào tạo:</div> <div><a class="text-white" href="tel:02083754226">02083 754 226</a></div></div>
