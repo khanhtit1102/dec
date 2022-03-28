@@ -45,9 +45,7 @@ jQuery(function() {
             clearTimeout(myScrollingId);
         myScrollingId = setTimeout(myScrollingFn,333)
     });
-    console.log(jQuery(window).width());
-    if(jQuery(window).width()<750)
-        jQuery('#bannerMobile').modal();
+    jQuery('#bannerMobile').modal();
     var ytbWidth = jQuery('.ytb-video').width();
     var ytbHeight = ytbWidth*9/16;
     console.log(ytbHeight);
